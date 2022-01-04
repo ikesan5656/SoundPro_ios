@@ -13,6 +13,9 @@ struct ContentView: View {
     //音源ファイルのパス(ローカルver)
     let music_path = Bundle.main.bundleURL.appendingPathComponent("shining_star.mp3");
     
+    //クラスインスタンス
+    let instance = PlayMusicSimple();
+    
     
     //ボタンクリックメソッド
     func ClickButton(){
@@ -30,14 +33,17 @@ struct ContentView: View {
     
     //音再生
     func PlaySound() {
-        
+        //テストでAssets.xcassets内のファイル取得
+        //let test_file = NSDataAsset(name: "shining_star");
+        //print(test_file);
+        instance.PlaySound();
     };
     
     var body: some View {
         VStack {
             Text("Hello, world!")
                 .padding()
-            Button(action: ClickButton) {
+            Button(action: PlaySound) {
                 Text("再生")
                     .font(.largeTitle)
                     .foregroundColor(Color.red);
