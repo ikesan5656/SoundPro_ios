@@ -9,9 +9,9 @@ import AVFoundation //音関係のライブラリ
 
 struct ContentView: View {
     //プレイヤーコンテキスト(宣言時の!や?はnilを許す)
-    @State var audioPlayer: AVAudioPlayer!;
+    //@State var audioPlayer: AVAudioPlayer!;
     //音源ファイルのパス(ローカルver)
-    let music_path = Bundle.main.bundleURL.appendingPathComponent("shining_star.mp3");
+    //let music_path = Bundle.main.bundleURL.appendingPathComponent("shining_star.mp3");
     
     //クラスインスタンス
     let instance = PlayMusicSimple();
@@ -19,16 +19,7 @@ struct ContentView: View {
     
     //ボタンクリックメソッド
     func ClickButton(){
-        print("クリック");
-        print(music_path);
-        do{
-            //インスタンス作成
-            self.audioPlayer = try AVAudioPlayer(contentsOf: music_path);
-            print("成功");
-            self.audioPlayer.play();
-        }catch{
-           print("エラー");
-        }
+
     }
     
     //音再生
@@ -40,16 +31,26 @@ struct ContentView: View {
     };
     
     var body: some View {
-        VStack {
-            Text("Hello, world!")
-                .padding()
-            Button(action: PlaySound) {
-                Text("再生")
-                    .font(.largeTitle)
-                    .foregroundColor(Color.red);
+        //ナビゲーション
+        NavigationView{
+            VStack {
+                Text("Hello, world!")
+                    .padding()
+                Button(action: PlaySound) {
+                    Text("再生")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.red);
+                    
+                }
+                .background(Color.mint);
+                //Spacer();
+                NavigationLink(destination: SubView()){
+                    Label("Go Sub", systemImage: "message");
+                }
             }
-            .background(Color.mint);
+
         }
+
     }
 }
 
