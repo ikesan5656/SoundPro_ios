@@ -29,6 +29,10 @@ class SoundEffect{
         engine = AVAudioEngine();
         player = AVAudioPlayerNode();
         reverb = AVAudioUnitReverb();
+        
+        //reverbの設定
+        reverb.loadFactoryPreset(.largeRoom2);
+        reverb.wetDryMix = 60;
     }
     
     //デイニシャライザ
