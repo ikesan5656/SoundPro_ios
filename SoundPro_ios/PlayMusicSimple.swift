@@ -24,6 +24,13 @@ class PlayMusicSimple {
         }
     }
     
+    //再生終了
+    func StopSound() {
+        self.audioPlayer.stop();
+    }
+    
+    
+    
 }
 
 

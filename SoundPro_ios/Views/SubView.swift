@@ -6,7 +6,20 @@ import Foundation
 import SwiftUI
 
 struct SubView: View {
+    
+    let soundEffect = SoundEffect();
+    
     var body: some View {
-        Text("SubView").font(.largeTitle);
+        VStack{
+            Text("EffectTestView").font(.largeTitle);
+            HStack{
+                Button(action: soundEffect.PlayAudio) {
+                    Text("Effect再生")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.red);
+                    
+                }
+            }
+        }
     }
 }

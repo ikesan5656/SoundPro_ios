@@ -36,13 +36,23 @@ struct ContentView: View {
             VStack {
                 Text("Hello, world!")
                     .padding()
-                Button(action: PlaySound) {
-                    Text("再生")
-                        .font(.largeTitle)
-                        .foregroundColor(Color.red);
+                HStack {
+                    Button(action: PlaySound) {
+                        Text("再生")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.red);
+                        
+                    }
+                    .background(Color.mint);
                     
+                    Button(action: instance.StopSound) {
+                        Text("ストップ")
+                            .font(.largeTitle)
+                            .foregroundColor(Color.red);
+                        
+                    }
+                    .background(Color.mint);
                 }
-                .background(Color.mint);
                 //Spacer();
                 NavigationLink(destination: SubView()){
                     Label("Go Sub", systemImage: "message");
