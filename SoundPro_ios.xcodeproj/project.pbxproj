@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		390FF8A0278489E300DD55F4 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390FF89F278489E300DD55F4 /* SubView.swift */; };
+		39374DFE279A2F0B00526AAD /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39374DFD279A2F0B00526AAD /* Table.swift */; };
 		39AC26DA278090070034501C /* shining_star.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39AC26D9278090070034501C /* shining_star.mp3 */; };
 		39B26D1A2789D3A9009B14C1 /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B26D192789D3A9009B14C1 /* SoundEffect.swift */; };
 		39B9624B278326830089DA87 /* PlayMusicSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9624A278326830089DA87 /* PlayMusicSimple.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		390FF89F278489E300DD55F4 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		39374DFD279A2F0B00526AAD /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		39AC26D9278090070034501C /* shining_star.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shining_star.mp3; path = ../../../../Music/shining_star.mp3; sourceTree = "<group>"; };
 		39B26D192789D3A9009B14C1 /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
 		39B9624A278326830089DA87 /* PlayMusicSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicSimple.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		39374DFC279A2E5100526AAD /* AudioKitWrap */ = {
+			isa = PBXGroup;
+			children = (
+				39374DFD279A2F0B00526AAD /* Table.swift */,
+			);
+			path = AudioKitWrap;
+			sourceTree = "<group>";
+		};
 		39BD3165277BD05200252CED = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		39BD3170277BD05200252CED /* SoundPro_ios */ = {
 			isa = PBXGroup;
 			children = (
+				39374DFC279A2E5100526AAD /* AudioKitWrap */,
 				390FF89E278489B400DD55F4 /* Views */,
 				39AC26D9278090070034501C /* shining_star.mp3 */,
 				39BD3171277BD05200252CED /* SoundPro_iosApp.swift */,
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39374DFE279A2F0B00526AAD /* Table.swift in Sources */,
 				39BD3174277BD05200252CED /* ContentView.swift in Sources */,
 				390FF8A0278489E300DD55F4 /* SubView.swift in Sources */,
 				39B26D1A2789D3A9009B14C1 /* SoundEffect.swift in Sources */,

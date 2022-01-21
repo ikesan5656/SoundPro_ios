@@ -41,6 +41,7 @@ class SoundEffect{
     }
     
     /*メソッド*/
+    //エフェクト再生
     func PlayAudio() {
         //音源ファイルのパス(ローカルver)
         let musicPath = Bundle.main.bundleURL.appendingPathComponent("shining_star.mp3");
@@ -69,6 +70,13 @@ class SoundEffect{
             
         //}
     }
+    
+    //エフェクト再生終了
+    func StopAudio() {
+        player.stop();
+    }
+    
+    
     
 }
 
