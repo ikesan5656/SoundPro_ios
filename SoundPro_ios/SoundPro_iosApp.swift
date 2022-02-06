@@ -8,7 +8,12 @@ import SwiftUI
 struct SoundPro_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            //let appState = AppState();
+            //let reducer = Reducer();
+            let store = Store(/*appState: appState*//*, reducer: reducer*/)
+                
+            ContentView().environmentObject(store)
         }
     }
 }

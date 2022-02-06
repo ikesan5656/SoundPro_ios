@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AudioKit",
+        "repositoryURL": "https://github.com/AudioKit/AudioKit.git",
+        "state": {
+          "branch": null,
+          "revision": "94ed6b8934db8fed4b1cf387a507e36168b05bf1",
+          "version": "5.3.2"
+        }
+      },
+      {
+        "package": "AudioKitUI",
+        "repositoryURL": "https://github.com/AudioKit/AudioKitUI.git",
+        "state": {
+          "branch": null,
+          "revision": "53c016a8f51156471a367842195b1ba32872f544",
+          "version": "0.1.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

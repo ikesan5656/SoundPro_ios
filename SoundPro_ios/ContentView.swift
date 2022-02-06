@@ -32,7 +32,7 @@ struct ContentView: View {
     
     var body: some View {
         //ナビゲーション
-        NavigationView{
+        /*NavigationView{
             VStack {
                 Text("Hello, world!")
                     .padding()
@@ -54,11 +54,14 @@ struct ContentView: View {
                     .background(Color.mint);
                 }
                 //Spacer();
-                NavigationLink(destination: SubView()){
+                NavigationLink(destination: TableRecipeView()){
                     Label("Go Sub", systemImage: "message");
                 }
             }
 
+        }*/
+        VStack{
+            EditView();
         }
 
     }

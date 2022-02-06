@@ -8,8 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		390FF8A0278489E300DD55F4 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390FF89F278489E300DD55F4 /* SubView.swift */; };
+		392582D127AF61D400292FEF /* DawEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392582D027AF61D400292FEF /* DawEngine.swift */; };
 		39374DFE279A2F0B00526AAD /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39374DFD279A2F0B00526AAD /* Table.swift */; };
-		39AC26DA278090070034501C /* shining_star.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39AC26D9278090070034501C /* shining_star.mp3 */; };
+		39374E02279A966A00526AAD /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 39374E01279A966A00526AAD /* AudioKit */; };
+		39374E05279A9C0900526AAD /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 39374E04279A9C0900526AAD /* AudioKitUI */; };
+		3938821327AF8B7000FB71A2 /* PrivateAssets in Resources */ = {isa = PBXBuildFile; fileRef = 3938821227AF8B7000FB71A2 /* PrivateAssets */; };
+		394BCA7E27AAB44000885359 /* TestSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394BCA7D27AAB44000885359 /* TestSlice.swift */; };
+		39556FB627A0231D00B5D5B1 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39556FB527A0231D00B5D5B1 /* EditView.swift */; };
+		3956C57E27A7FDD5008F4F73 /* DawEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956C57D27A7FDD5008F4F73 /* DawEdit.swift */; };
+		3956C58227A801B4008F4F73 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956C58127A801B4008F4F73 /* TrackModel.swift */; };
+		3956C58427A8188C008F4F73 /* DawTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956C58327A8188C008F4F73 /* DawTrack.swift */; };
+		398B617827A969250045AE71 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398B617727A969250045AE71 /* Store.swift */; };
+		398B617A27A96EC60045AE71 /* ReduxTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398B617927A96EC60045AE71 /* ReduxTestView.swift */; };
 		39B26D1A2789D3A9009B14C1 /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B26D192789D3A9009B14C1 /* SoundEffect.swift */; };
 		39B9624B278326830089DA87 /* PlayMusicSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9624A278326830089DA87 /* PlayMusicSimple.swift */; };
 		39BD3172277BD05200252CED /* SoundPro_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD3171277BD05200252CED /* SoundPro_iosApp.swift */; };
@@ -40,8 +50,16 @@
 
 /* Begin PBXFileReference section */
 		390FF89F278489E300DD55F4 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		392582D027AF61D400292FEF /* DawEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawEngine.swift; sourceTree = "<group>"; };
 		39374DFD279A2F0B00526AAD /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
-		39AC26D9278090070034501C /* shining_star.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = shining_star.mp3; path = ../../../../Music/shining_star.mp3; sourceTree = "<group>"; };
+		3938821227AF8B7000FB71A2 /* PrivateAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PrivateAssets; sourceTree = "<group>"; };
+		394BCA7D27AAB44000885359 /* TestSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSlice.swift; sourceTree = "<group>"; };
+		39556FB527A0231D00B5D5B1 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		3956C57D27A7FDD5008F4F73 /* DawEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawEdit.swift; sourceTree = "<group>"; };
+		3956C58127A801B4008F4F73 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		3956C58327A8188C008F4F73 /* DawTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawTrack.swift; sourceTree = "<group>"; };
+		398B617727A969250045AE71 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		398B617927A96EC60045AE71 /* ReduxTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxTestView.swift; sourceTree = "<group>"; };
 		39B26D192789D3A9009B14C1 /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
 		39B9624A278326830089DA87 /* PlayMusicSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicSimple.swift; sourceTree = "<group>"; };
 		39BD316E277BD05200252CED /* SoundPro_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundPro_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39374E05279A9C0900526AAD /* AudioKitUI in Frameworks */,
+				39374E02279A966A00526AAD /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				390FF89F278489E300DD55F4 /* SubView.swift */,
+				39556FB527A0231D00B5D5B1 /* EditView.swift */,
+				3956C57D27A7FDD5008F4F73 /* DawEdit.swift */,
+				398B617927A96EC60045AE71 /* ReduxTestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +118,33 @@
 				39374DFD279A2F0B00526AAD /* Table.swift */,
 			);
 			path = AudioKitWrap;
+			sourceTree = "<group>";
+		};
+		3956C57F27A8016B008F4F73 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3956C58027A8017A008F4F73 /* Daw */,
+				392582D027AF61D400292FEF /* DawEngine.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3956C58027A8017A008F4F73 /* Daw */ = {
+			isa = PBXGroup;
+			children = (
+				3956C58127A801B4008F4F73 /* TrackModel.swift */,
+				3956C58327A8188C008F4F73 /* DawTrack.swift */,
+			);
+			path = Daw;
+			sourceTree = "<group>";
+		};
+		398B617627A9690C0045AE71 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				398B617727A969250045AE71 /* Store.swift */,
+				394BCA7D27AAB44000885359 /* TestSlice.swift */,
+			);
+			path = Redux;
 			sourceTree = "<group>";
 		};
 		39BD3165277BD05200252CED = {
@@ -120,9 +170,11 @@
 		39BD3170277BD05200252CED /* SoundPro_ios */ = {
 			isa = PBXGroup;
 			children = (
+				3938821227AF8B7000FB71A2 /* PrivateAssets */,
+				398B617627A9690C0045AE71 /* Redux */,
+				3956C57F27A8016B008F4F73 /* Components */,
 				39374DFC279A2E5100526AAD /* AudioKitWrap */,
 				390FF89E278489B400DD55F4 /* Views */,
-				39AC26D9278090070034501C /* shining_star.mp3 */,
 				39BD3171277BD05200252CED /* SoundPro_iosApp.swift */,
 				39BD3173277BD05200252CED /* ContentView.swift */,
 				39BD3175277BD05300252CED /* Assets.xcassets */,
@@ -174,6 +226,10 @@
 			dependencies = (
 			);
 			name = SoundPro_ios;
+			packageProductDependencies = (
+				39374E01279A966A00526AAD /* AudioKit */,
+				39374E04279A9C0900526AAD /* AudioKitUI */,
+			);
 			productName = SoundPro_ios;
 			productReference = 39BD316E277BD05200252CED /* SoundPro_ios.app */;
 			productType = "com.apple.product-type.application";
@@ -246,6 +302,10 @@
 				Base,
 			);
 			mainGroup = 39BD3165277BD05200252CED;
+			packageReferences = (
+				39374E00279A966A00526AAD /* XCRemoteSwiftPackageReference "AudioKit" */,
+				39374E03279A9C0900526AAD /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+			);
 			productRefGroup = 39BD316F277BD05200252CED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,7 +324,7 @@
 			files = (
 				39BD3179277BD05300252CED /* Preview Assets.xcassets in Resources */,
 				39BD3176277BD05300252CED /* Assets.xcassets in Resources */,
-				39AC26DA278090070034501C /* shining_star.mp3 in Resources */,
+				3938821327AF8B7000FB71A2 /* PrivateAssets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,9 +351,17 @@
 			files = (
 				39374DFE279A2F0B00526AAD /* Table.swift in Sources */,
 				39BD3174277BD05200252CED /* ContentView.swift in Sources */,
+				392582D127AF61D400292FEF /* DawEngine.swift in Sources */,
+				3956C57E27A7FDD5008F4F73 /* DawEdit.swift in Sources */,
 				390FF8A0278489E300DD55F4 /* SubView.swift in Sources */,
+				3956C58227A801B4008F4F73 /* TrackModel.swift in Sources */,
 				39B26D1A2789D3A9009B14C1 /* SoundEffect.swift in Sources */,
+				398B617827A969250045AE71 /* Store.swift in Sources */,
+				39556FB627A0231D00B5D5B1 /* EditView.swift in Sources */,
 				39BD3172277BD05200252CED /* SoundPro_iosApp.swift in Sources */,
+				398B617A27A96EC60045AE71 /* ReduxTestView.swift in Sources */,
+				3956C58427A8188C008F4F73 /* DawTrack.swift in Sources */,
+				394BCA7E27AAB44000885359 /* TestSlice.swift in Sources */,
 				39B9624B278326830089DA87 /* PlayMusicSimple.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +685,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39374E00279A966A00526AAD /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		39374E03279A9C0900526AAD /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39374E01279A966A00526AAD /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39374E00279A966A00526AAD /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		39374E04279A9C0900526AAD /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39374E03279A9C0900526AAD /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39BD3166277BD05200252CED /* Project object */;
 }
