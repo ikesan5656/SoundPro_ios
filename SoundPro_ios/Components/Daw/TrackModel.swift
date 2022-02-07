@@ -10,6 +10,10 @@
 import SwiftUI;
 
 class TrackModel: ObservableObject {
+    
+    //シングルトンインスタンス
+    static var shared = TrackModel();
+    
     @Published var items: [TrackData] = [TrackData("Kick"), TrackData("Snare")];
     
     func addItems(_ items: [String]) {
@@ -22,6 +26,12 @@ class TrackModel: ObservableObject {
     func AddTrack() {
         self.items.append(TrackData("test"))
     }
+    
+    //１つの小節更新
+    func UpdateOneBar(){
+        self.items[0].musicalBars[1].name = "Update";
+    }
+    
 }
  
 class TrackData: ObservableObject, Identifiable {
@@ -30,11 +40,11 @@ class TrackData: ObservableObject, Identifiable {
     @Published var name: String
     
     //小節群
-    @Published var measure: [(name: String, data: String)]
+    @Published var musicalBars: [(name: String, data: String)]
     
     init(_ name: String) {
         self.name = name;
-        self.measure = [(name: "test", data: "none"), (name: "test", data: "none")];
+        self.musicalBars = [(name: "test", data: "none"), (name: "test", data: "none")];
     }
 }
  

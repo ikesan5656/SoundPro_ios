@@ -60,6 +60,10 @@ class DawEngine{
         
     }
     
+    func StopOneShot(){
+        playerNode.stop()
+    }
+    
     func PlayEX(){
         
     }

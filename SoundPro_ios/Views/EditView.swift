@@ -18,11 +18,17 @@ struct EditView: View {
     }
     var body: some View {
         VStack{
-            DawEdit();
+            DawEdit().frame(width: UIScreen.main.bounds.width, alignment: .leading)
+            
             Button(action: {
                 dawEngine.PlayOneshot();
             }){
                 Text("再生")
+            }
+            Button(action: {
+                dawEngine.StopOneShot()
+            }){
+                Text("ストップ")
             }
         }
     }

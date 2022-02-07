@@ -9,30 +9,38 @@
 import SwiftUI;
 
 struct DawEdit: View{
-    @ObservedObject private var trackModel = TrackModel();
+    
+    @ObservedObject private var trackModel = TrackModel.shared;
+    //@ObservedObject private var trackModel = TrackModel();
     
     var body: some View {
         //Text("DawTest");
         //以下がトラック描画
         
         VStack(spacing: 5){
-            ForEach(trackModel.items) { item in
-                DawTrack(track: item);
+            
+            ForEach(0..<trackModel.items.count) { itemIndex in
+                DawTrack(track: trackModel.items[itemIndex]);
             }
             
+        }
+        
+        HStack{
             ZStack(){
                 Rectangle()
                     .fill(Color.gray)
                     .frame(width: 60, height:50)
                     //タップアクション
                     .onTapGesture {
-                        trackModel.AddTrack()
+                        //trackModel.AddTrack()
+                        trackModel.UpdateOneBar()
                     }
                 Text("+")
+            
             }
-            //DawTrack()
+          
         }
-        .frame(width: UIScreen.main.bounds.width, alignment: .leading)
+        
     }
 }
 

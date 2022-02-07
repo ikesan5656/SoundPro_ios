@@ -12,6 +12,15 @@ struct DawTrack: View {
     
     @ObservedObject var track: TrackData;
     
+    //種別タップ
+    func TapCategory(){
+        print("カテゴリータップ")
+    }
+    //小節タップ
+    func TapMusicalBar(){
+        print("小節タップ")
+    }
+    
     var body: some View {
         //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         
@@ -25,24 +34,29 @@ struct DawTrack: View {
                 Text("\(track.name)")
                 
             }
+            .gesture(TapGesture().onEnded{
+                TapCategory()
+            })
+            
             //Text("\(track.measure[0].name)")
             //小節
-            ForEach(0..<track.measure.count) { index in
+            ForEach(0..<track.musicalBars.count) { index in
                 ZStack{
                     Rectangle()
                         .fill(Color.gray)
                         .frame(width: 60, height:50)
-                    Text("\(track.measure[index].name)")
+                    Text("\(track.musicalBars[index].name)")
                 
                 }
+                .gesture(TapGesture().onEnded{
+                    TapMusicalBar()
+                })
             }
             
-                        //ノード
+                   
         }
         
-        VStack{
-            
-        }
+
     }
 }
 
