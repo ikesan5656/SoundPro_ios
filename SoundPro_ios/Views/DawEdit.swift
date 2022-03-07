@@ -17,29 +17,14 @@ struct DawEdit: View{
         //Text("DawTest");
         //以下がトラック描画
         
-        VStack(spacing: 5){
+        HStack(alignment : .top ){
             
-            ForEach(0..<trackModel.items.count) { itemIndex in
-                DawTrack(track: trackModel.items[itemIndex]);
-            }
-            
+            DawTrackCategorys();
+            DawTrackBars();
+
         }
         
-        HStack{
-            ZStack(){
-                Rectangle()
-                    .fill(Color.gray)
-                    .frame(width: 60, height:50)
-                    //タップアクション
-                    .onTapGesture {
-                        //trackModel.AddTrack()
-                        trackModel.UpdateOneBar()
-                    }
-                Text("+")
-            
-            }
-          
-        }
+
         
     }
 }

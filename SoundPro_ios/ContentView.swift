@@ -30,6 +30,21 @@ struct ContentView: View {
         instance.PlaySound();
     };
     
+    init(){
+        print("初期化")
+        //self.backgroundColor = UIColor.red
+        let coloredAppearance = UINavigationBarAppearance()
+        coloredAppearance.configureWithTransparentBackground()
+        coloredAppearance.backgroundColor = .gray
+        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        UINavigationBar.appearance().standardAppearance = coloredAppearance
+        UINavigationBar.appearance().compactAppearance = coloredAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+        UINavigationBar.appearance().tintColor = .white
+    }
+    
     var body: some View {
         //ナビゲーション
         /*NavigationView{
@@ -60,8 +75,13 @@ struct ContentView: View {
             }
 
         }*/
-        VStack{
-            EditView();
+
+        NavigationView {
+
+            VStack{
+                EditView();
+            }
+            .navigationBarTitle("Edit", displayMode: .inline)
         }
 
     }

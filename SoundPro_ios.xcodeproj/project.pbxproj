@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39028B0D27B35D1600289DEA /* DawTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39028B0C27B35D1600289DEA /* DawTest.swift */; };
 		390FF8A0278489E300DD55F4 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390FF89F278489E300DD55F4 /* SubView.swift */; };
 		392582D127AF61D400292FEF /* DawEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392582D027AF61D400292FEF /* DawEngine.swift */; };
 		39374DFE279A2F0B00526AAD /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39374DFD279A2F0B00526AAD /* Table.swift */; };
@@ -20,6 +21,8 @@
 		3956C58427A8188C008F4F73 /* DawTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956C58327A8188C008F4F73 /* DawTrack.swift */; };
 		398B617827A969250045AE71 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398B617727A969250045AE71 /* Store.swift */; };
 		398B617A27A96EC60045AE71 /* ReduxTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398B617927A96EC60045AE71 /* ReduxTestView.swift */; };
+		39A8C55727CB98B5005F5F01 /* DawTrackCategorys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8C55627CB98B5005F5F01 /* DawTrackCategorys.swift */; };
+		39A8C55927CBAD45005F5F01 /* DawTrackBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8C55827CBAD45005F5F01 /* DawTrackBars.swift */; };
 		39B26D1A2789D3A9009B14C1 /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B26D192789D3A9009B14C1 /* SoundEffect.swift */; };
 		39B9624B278326830089DA87 /* PlayMusicSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9624A278326830089DA87 /* PlayMusicSimple.swift */; };
 		39BD3172277BD05200252CED /* SoundPro_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD3171277BD05200252CED /* SoundPro_iosApp.swift */; };
@@ -49,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39028B0C27B35D1600289DEA /* DawTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawTest.swift; sourceTree = "<group>"; };
 		390FF89F278489E300DD55F4 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		392582D027AF61D400292FEF /* DawEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawEngine.swift; sourceTree = "<group>"; };
 		39374DFD279A2F0B00526AAD /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		3956C58327A8188C008F4F73 /* DawTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawTrack.swift; sourceTree = "<group>"; };
 		398B617727A969250045AE71 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		398B617927A96EC60045AE71 /* ReduxTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxTestView.swift; sourceTree = "<group>"; };
+		39A8C55627CB98B5005F5F01 /* DawTrackCategorys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawTrackCategorys.swift; sourceTree = "<group>"; };
+		39A8C55827CBAD45005F5F01 /* DawTrackBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawTrackBars.swift; sourceTree = "<group>"; };
 		39B26D192789D3A9009B14C1 /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
 		39B9624A278326830089DA87 /* PlayMusicSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicSimple.swift; sourceTree = "<group>"; };
 		39BD316E277BD05200252CED /* SoundPro_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundPro_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +114,7 @@
 				39556FB527A0231D00B5D5B1 /* EditView.swift */,
 				3956C57D27A7FDD5008F4F73 /* DawEdit.swift */,
 				398B617927A96EC60045AE71 /* ReduxTestView.swift */,
+				39028B0C27B35D1600289DEA /* DawTest.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +141,8 @@
 			children = (
 				3956C58127A801B4008F4F73 /* TrackModel.swift */,
 				3956C58327A8188C008F4F73 /* DawTrack.swift */,
+				39A8C55627CB98B5005F5F01 /* DawTrackCategorys.swift */,
+				39A8C55827CBAD45005F5F01 /* DawTrackBars.swift */,
 			);
 			path = Daw;
 			sourceTree = "<group>";
@@ -349,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A8C55727CB98B5005F5F01 /* DawTrackCategorys.swift in Sources */,
 				39374DFE279A2F0B00526AAD /* Table.swift in Sources */,
 				39BD3174277BD05200252CED /* ContentView.swift in Sources */,
 				392582D127AF61D400292FEF /* DawEngine.swift in Sources */,
@@ -356,8 +366,10 @@
 				390FF8A0278489E300DD55F4 /* SubView.swift in Sources */,
 				3956C58227A801B4008F4F73 /* TrackModel.swift in Sources */,
 				39B26D1A2789D3A9009B14C1 /* SoundEffect.swift in Sources */,
+				39A8C55927CBAD45005F5F01 /* DawTrackBars.swift in Sources */,
 				398B617827A969250045AE71 /* Store.swift in Sources */,
 				39556FB627A0231D00B5D5B1 /* EditView.swift in Sources */,
+				39028B0D27B35D1600289DEA /* DawTest.swift in Sources */,
 				39BD3172277BD05200252CED /* SoundPro_iosApp.swift in Sources */,
 				398B617A27A96EC60045AE71 /* ReduxTestView.swift in Sources */,
 				3956C58427A8188C008F4F73 /* DawTrack.swift in Sources */,

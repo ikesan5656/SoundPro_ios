@@ -68,6 +68,16 @@ class DawEngine{
         
     }
     
+    //AVAudioTime取得(何秒後)
+    func GetSecInTheFuture(sec: Int, audioFile: AVAudioFile) -> AVAudioTime {
+        
+        let secFuture: AVAudioTime =
+        AVAudioTime.init(sampleTime: (Int64(sec) * Int64(audioFile.fileFormat.sampleRate)), atRate: audioFile.fileFormat.sampleRate);
+        
+        return secFuture;
+    }
+    
+    
     
     
     

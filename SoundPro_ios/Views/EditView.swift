@@ -19,8 +19,9 @@ struct EditView: View {
     var body: some View {
         VStack{
             DawEdit().frame(width: UIScreen.main.bounds.width, alignment: .leading)
-            
-            Button(action: {
+
+            Spacer()
+            /*Button(action: {
                 dawEngine.PlayOneshot();
             }){
                 Text("再生")
@@ -29,7 +30,7 @@ struct EditView: View {
                 dawEngine.StopOneShot()
             }){
                 Text("ストップ")
-            }
+            }*/
         }
     }
 }
