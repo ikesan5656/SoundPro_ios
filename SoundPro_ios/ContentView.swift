@@ -6,6 +6,7 @@
 
 import SwiftUI
 import AVFoundation //音関係のライブラリ
+import PartialSheet;
 
 struct ContentView: View {
     //プレイヤーコンテキスト(宣言時の!や?はnilを許す)
@@ -82,7 +83,7 @@ struct ContentView: View {
                 EditView();
             }
             .navigationBarTitle("Edit", displayMode: .inline)
-        }
+        }.attachPartialSheetToRoot()
 
     }
 }

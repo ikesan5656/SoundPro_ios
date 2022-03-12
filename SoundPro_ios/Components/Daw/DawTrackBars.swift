@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import PartialSheet //ハーフモーダル
 
 struct DawTrackBars: View {
     @ObservedObject private var trackModel = TrackModel.shared;
+    //ハーフモーダル
+    //@EnvironmentObject var partialSheetManager: PartialShe;
+    //let sheetManager: PartialSheetManager = PartialSheetManager();
     
     var body: some View {
         HStack{
@@ -24,6 +28,8 @@ struct DawTrackBars: View {
                                     .frame(width: 60, height:50)
                                 Text("\(trackModel.items[trackIndex].musicalBars[barIndex].name)")
                             
+                            }.onTapGesture {
+                                print("小節をタップしました")
                             }
                         }
                     

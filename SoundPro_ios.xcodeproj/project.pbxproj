@@ -21,6 +21,8 @@
 		3956C58427A8188C008F4F73 /* DawTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3956C58327A8188C008F4F73 /* DawTrack.swift */; };
 		398B617827A969250045AE71 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398B617727A969250045AE71 /* Store.swift */; };
 		398B617A27A96EC60045AE71 /* ReduxTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398B617927A96EC60045AE71 /* ReduxTestView.swift */; };
+		39A562F527DC3A7B00B65968 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 39A562F427DC3A7B00B65968 /* PartialSheet */; };
+		39A562F727DC6E5700B65968 /* DeploySoundModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A562F627DC6E5700B65968 /* DeploySoundModal.swift */; };
 		39A8C55727CB98B5005F5F01 /* DawTrackCategorys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8C55627CB98B5005F5F01 /* DawTrackCategorys.swift */; };
 		39A8C55927CBAD45005F5F01 /* DawTrackBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A8C55827CBAD45005F5F01 /* DawTrackBars.swift */; };
 		39B26D1A2789D3A9009B14C1 /* SoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B26D192789D3A9009B14C1 /* SoundEffect.swift */; };
@@ -64,6 +66,7 @@
 		3956C58327A8188C008F4F73 /* DawTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawTrack.swift; sourceTree = "<group>"; };
 		398B617727A969250045AE71 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		398B617927A96EC60045AE71 /* ReduxTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxTestView.swift; sourceTree = "<group>"; };
+		39A562F627DC6E5700B65968 /* DeploySoundModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploySoundModal.swift; sourceTree = "<group>"; };
 		39A8C55627CB98B5005F5F01 /* DawTrackCategorys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawTrackCategorys.swift; sourceTree = "<group>"; };
 		39A8C55827CBAD45005F5F01 /* DawTrackBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DawTrackBars.swift; sourceTree = "<group>"; };
 		39B26D192789D3A9009B14C1 /* SoundEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffect.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A562F527DC3A7B00B65968 /* PartialSheet in Frameworks */,
 				39374E05279A9C0900526AAD /* AudioKitUI in Frameworks */,
 				39374E02279A966A00526AAD /* AudioKit in Frameworks */,
 			);
@@ -143,6 +147,7 @@
 				3956C58327A8188C008F4F73 /* DawTrack.swift */,
 				39A8C55627CB98B5005F5F01 /* DawTrackCategorys.swift */,
 				39A8C55827CBAD45005F5F01 /* DawTrackBars.swift */,
+				39A562F627DC6E5700B65968 /* DeploySoundModal.swift */,
 			);
 			path = Daw;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			packageProductDependencies = (
 				39374E01279A966A00526AAD /* AudioKit */,
 				39374E04279A9C0900526AAD /* AudioKitUI */,
+				39A562F427DC3A7B00B65968 /* PartialSheet */,
 			);
 			productName = SoundPro_ios;
 			productReference = 39BD316E277BD05200252CED /* SoundPro_ios.app */;
@@ -314,6 +320,7 @@
 			packageReferences = (
 				39374E00279A966A00526AAD /* XCRemoteSwiftPackageReference "AudioKit" */,
 				39374E03279A9C0900526AAD /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+				39A562F327DC3A7B00B65968 /* XCRemoteSwiftPackageReference "PartialSheet" */,
 			);
 			productRefGroup = 39BD316F277BD05200252CED /* Products */;
 			projectDirPath = "";
@@ -362,6 +369,7 @@
 				39374DFE279A2F0B00526AAD /* Table.swift in Sources */,
 				39BD3174277BD05200252CED /* ContentView.swift in Sources */,
 				392582D127AF61D400292FEF /* DawEngine.swift in Sources */,
+				39A562F727DC6E5700B65968 /* DeploySoundModal.swift in Sources */,
 				3956C57E27A7FDD5008F4F73 /* DawEdit.swift in Sources */,
 				390FF8A0278489E300DD55F4 /* SubView.swift in Sources */,
 				3956C58227A801B4008F4F73 /* TrackModel.swift in Sources */,
@@ -715,6 +723,14 @@
 				minimumVersion = 0.1.2;
 			};
 		};
+		39A562F327DC3A7B00B65968 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -727,6 +743,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 39374E03279A9C0900526AAD /* XCRemoteSwiftPackageReference "AudioKitUI" */;
 			productName = AudioKitUI;
+		};
+		39A562F427DC3A7B00B65968 /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39A562F327DC3A7B00B65968 /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
