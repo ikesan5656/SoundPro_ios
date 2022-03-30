@@ -14,25 +14,24 @@ struct DawTrackCategorys: View {
     @ObservedObject private var trackModel = TrackModel.shared;
     
     var body: some View {
-        HStack{
-            VStack(spacing: 5){
-                ForEach(0..<trackModel.items.count, id: \.self) { trackIndex in
-                    ZStack{
-                        Rectangle()
-                            .fill(Color.gray)
-                            .frame(width: 60, height:50)
-                        Text("\(trackModel.items[trackIndex].name)")
-                    }
-                }
+       
+        VStack(spacing: 5){
+            ForEach(0..<trackModel.items.count, id: \.self) { trackIndex in
                 ZStack{
                     Rectangle()
                         .fill(Color.gray)
                         .frame(width: 60, height:50)
-                    Text("+")
+                    Text("\(trackModel.items[trackIndex].name)")
                 }
-
+            }
+            ZStack{
+                Rectangle()
+                    .fill(Color.gray)
+                    .frame(width: 60, height:50)
+                Text("+")
             }
         }
+        
     }
 }
 

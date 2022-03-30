@@ -17,7 +17,7 @@ struct DawEdit: View{
         //Text("DawTest");
         //以下がトラック描画
         
-        HStack(alignment : .top ){
+        HStack(alignment: .top, spacing: 5 ){
             
             DawTrackCategorys();
             DawTrackBars();

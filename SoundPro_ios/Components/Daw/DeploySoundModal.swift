@@ -10,9 +10,13 @@ import SwiftUI
 //DAWに配置する音源選択モーダル
 
 struct DeploySoundModal: View {
+    
+    @ObservedObject private var manager = DeploySoundManager.shared;
+    
     var body: some View {
         VStack{
             Text("モーダルビュー");
+            Text("\(manager.currentCategory)")
             
         }.frame(height: 100)
     }

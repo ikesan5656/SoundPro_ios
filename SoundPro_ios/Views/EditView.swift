@@ -14,6 +14,7 @@ struct EditView: View {
     var dawEngine: DawEngine;
     //モーダルのフラグ
     @State private var isSheetPresented = false
+    @ObservedObject private var manager = DeploySoundManager.shared;
     
     init(){
         dawEngine = DawEngine();
@@ -23,7 +24,8 @@ struct EditView: View {
         VStack{
             DawEdit().frame(width: UIScreen.main.bounds.width, alignment: .leading)
             Button(action: {
-                isSheetPresented = !isSheetPresented
+                //isSheetPresented = !isSheetPresented
+                manager.openToggle();
             }){
                 Text("モーダル開く")
             }
@@ -38,9 +40,12 @@ struct EditView: View {
             }){
                 Text("ストップ")
             }*/
+        }.onAppear(){
+            //トラックの初期化
+            TrackModel.shared.initializeTrack();
         }
         //モーダル
-        .partialSheet(isPresented: $isSheetPresented, content: DeploySoundModal.init);
+        .partialSheet(isPresented: $manager.isOpen/*$isSheetPresented*/, content: DeploySoundModal.init);
     }
 }
 

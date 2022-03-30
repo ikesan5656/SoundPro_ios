@@ -34,6 +34,7 @@
 		39BD3183277BD05300252CED /* SoundPro_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD3182277BD05300252CED /* SoundPro_iosTests.swift */; };
 		39BD318D277BD05300252CED /* SoundPro_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD318C277BD05300252CED /* SoundPro_iosUITests.swift */; };
 		39BD318F277BD05300252CED /* SoundPro_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD318E277BD05300252CED /* SoundPro_iosUITestsLaunchTests.swift */; };
+		39E4942427E6EA120074A13B /* DeploySoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4942327E6EA120074A13B /* DeploySoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		39BD3188277BD05300252CED /* SoundPro_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundPro_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BD318C277BD05300252CED /* SoundPro_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPro_iosUITests.swift; sourceTree = "<group>"; };
 		39BD318E277BD05300252CED /* SoundPro_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPro_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		39E4942327E6EA120074A13B /* DeploySoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploySoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				39A8C55627CB98B5005F5F01 /* DawTrackCategorys.swift */,
 				39A8C55827CBAD45005F5F01 /* DawTrackBars.swift */,
 				39A562F627DC6E5700B65968 /* DeploySoundModal.swift */,
+				39E4942327E6EA120074A13B /* DeploySoundManager.swift */,
 			);
 			path = Daw;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				39A8C55727CB98B5005F5F01 /* DawTrackCategorys.swift in Sources */,
 				39374DFE279A2F0B00526AAD /* Table.swift in Sources */,
 				39BD3174277BD05200252CED /* ContentView.swift in Sources */,
+				39E4942427E6EA120074A13B /* DeploySoundManager.swift in Sources */,
 				392582D127AF61D400292FEF /* DawEngine.swift in Sources */,
 				39A562F727DC6E5700B65968 /* DeploySoundModal.swift in Sources */,
 				3956C57E27A7FDD5008F4F73 /* DawEdit.swift in Sources */,
